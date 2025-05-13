@@ -1,0 +1,5 @@
+# Java project .gitignore file
+*.class
+.DS_Store
+
+
