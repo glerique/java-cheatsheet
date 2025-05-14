@@ -1,35 +1,28 @@
-# Type Conversions in Java
+# Conversions de types en Java
 
-## String ↔️ Number Conversions
+## Conversion String ↔️ Nombre
+
 ```java
-// Converting String to a number
+// Convertir une chaîne en entier
 String numStr = "42";
 int num = Integer.parseInt(numStr);
 
-// Converting number back to String
+// Convertir un entier en chaîne
 String backToStr = Integer.toString(num);
 ```
 
-## Array Conversions
+## Conversion de tableaux
+
 ```java
-// Integer array
+// Tableau d'entiers
 int[] array = {1, 2, 3};
 
-// String array
+// Tableau de chaînes
 String[] strArray = {"a", "b", "c"};
 
-// String to char array
+// Chaîne vers tableau de caractères
 char[] charArray = "hello".toCharArray();
 
-// Char array to String
+// Tableau de caractères vers chaîne
 String str = new String(charArray);
 ```
-
-## Boxing/Unboxing
-```java
-// Boxing: primitive → wrapper
-Integer boxed = Integer.valueOf(5);
-
-// Unboxing: wrapper → primitive
-int unboxed = boxed.intValue();
-```S
