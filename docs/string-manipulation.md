@@ -1,33 +1,38 @@
-## String Manipulation
+# Manipulation de chaînes de caractères en Java
 
-### String Basics
+## Bases des chaînes
+
 ```java
 String s = "hello";
-s.length();                // 5
-s.charAt(0);               // 'h'
-s.substring(1, 4);         // "ell"
-s.indexOf("l");            // 2 (first occurrence)
-s.lastIndexOf("l");        // 3 (last occurrence)
+s.length();                // Longueur de la chaîne : 5
+s.charAt(0);               // Premier caractère : 'h'
+s.charAt(s.length() - 1);  // Dernier caractère : 'o'
+s.substring(1, 4);         // Sous-chaîne de l'indice 1 à 3 : "ell"
+s.indexOf("l");            // Position du premier 'l' : 2
+s.lastIndexOf("l");        // Position du dernier 'l' : 3
 ```
 
-### String Transformations
+## Transformations de chaînes
+
 ```java
-s.toUpperCase();           // "HELLO"
-s.toLowerCase();           // "hello"
-s.trim();                  // removes whitespace from both ends
-s.replace("l", "p");       // "heppo"
-s.contains("el");          // true
-s.startsWith("he");        // true
-s.endsWith("lo");          // true
+s.toUpperCase();           // Met en majuscules : "HELLO"
+s.toLowerCase();           // Met en minuscules : "hello"
+s.trim();                  // Supprime les espaces au début et à la fin
+s.replace("l", "p");       // Remplace tous les 'l' par 'p' : "heppo"
+s.contains("el");          // Vérifie si "el" est présent : true
+s.startsWith("he");        // Commence par "he" ? true
+s.endsWith("lo");          // Finit par "lo" ? true
 ```
 
-### String Splitting and Joining
+## Découper et assembler des chaînes
+
 ```java
-String[] parts = "a,b,c".split(",");  // ["a", "b", "c"]
-String joined = String.join("-", parts); // "a-b-c"
+String[] parts = "a,b,c".split(",");      // Découpe en tableau : ["a", "b", "c"]
+String joined = String.join("-", parts);  // Assemble avec "-" : "a-b-c"
 ```
 
-### StringBuilder for Efficient String Concatenation
+## StringBuilder pour une concaténation efficace
+
 ```java
 StringBuilder sb = new StringBuilder();
 sb.append("hello").append(" ").append("world");
