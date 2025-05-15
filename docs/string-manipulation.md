@@ -52,6 +52,7 @@ String fromChars = new String(chars);     // fromChars = "hello"
 String messy = "  hello  ";
 String clean = messy.trim();              // clean = "hello"
 String noSpaces = messy.replace(" ", ""); // noSpaces = "hello"
+String noAllSpaces = messy.replaceAll("\\s+", ""); // noAllSpaces = "hello"
 ```
 
 ## Comparaison de chaînes
@@ -67,4 +68,27 @@ String noSpaces = messy.replace(" ", ""); // noSpaces = "hello"
 String name = "Bob";
 int age = 30;
 String formatted = String.format("%s a %d ans", name, age); // formatted = "Bob a 30 ans"
+```
+
+## Astuces fréquentes Codewars
+
+```java
+// Vérifier si une chaîne est vide ou ne contient que des espaces
+s.isEmpty();                  // true si s == ""
+s.isBlank();                  // true si s == "" ou ne contient que des espaces (Java 11+)
+
+// Répéter une chaîne (Java 11+)
+"abc".repeat(3);              // "abcabcabc"
+
+// Remplacer avec regex (expressions régulières)
+String digits = "a1b2c3".replaceAll("\\D", ""); // digits = "123" (supprime tout sauf chiffres)
+
+// Découper avec regex
+String[] words = "a b   c".split("\\s+"); // words = ["a", "b", "c"]
+
+// Extraire un caractère sous forme de String
+String first = s.substring(0, 1);         // first = "h"
+
+// Inverser une chaîne
+String reversed = new StringBuilder(s).reverse().toString(); // reversed = "olleh"
 ```
