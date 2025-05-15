@@ -36,5 +36,35 @@ String joined = String.join("-", parts);  // Assemble avec "-" : "a-b-c"
 ```java
 StringBuilder sb = new StringBuilder();
 sb.append("hello").append(" ").append("world");
-String result = sb.toString();  // "hello world"
+String result = sb.toString();  // result = "hello world"
+```
+
+## Conversion entre String et char[]
+
+```java
+char[] chars = s.toCharArray();           // chars = ['h', 'e', 'l', 'l', 'o']
+String fromChars = new String(chars);     // fromChars = "hello"
+```
+
+## Suppression d'espaces et nettoyage
+
+```java
+String messy = "  hello  ";
+String clean = messy.trim();              // clean = "hello"
+String noSpaces = messy.replace(" ", ""); // noSpaces = "hello"
+```
+
+## Comparaison de chaînes
+
+```java
+"abc".equals("abc");           // true (sensible à la casse)
+"abc".equalsIgnoreCase("ABC"); // true (insensible à la casse)
+```
+
+## Formattage de chaînes
+
+```java
+String name = "Bob";
+int age = 30;
+String formatted = String.format("%s a %d ans", name, age); // formatted = "Bob a 30 ans"
 ```
