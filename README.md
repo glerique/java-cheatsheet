@@ -1,9 +1,20 @@
-##  Sommaire
-Ce document sert de référence rapide pour les principales opérations et concepts en Java. Vous y trouverez des exemples et explications pour manipuler les tableaux, les listes, les boucles, les opérations mathématiques, les chaînes de caractères et les conversions de types. 
+# Java Cheatsheet Codewars
 
+Ce dépôt contient des fiches pratiques pour les bases de Java, utiles pour les exercices et les katas.
+
+## Table des matières
+
+- [Conversions de types](docs/types-conversions.md)
 - [Opérations sur les tableaux](docs/array-operations.md)
-- [Listes Java](docs/lists.md)
-- [Boucles en Java](docs/loops.md)
+- [Listes](docs/lists.md)
+- [Boucles](docs/loops.md)
 - [Opérations mathématiques](docs/math-operations.md)
 - [Manipulation de chaînes](docs/string-manipulation.md)
-- [Conversions de types](docs/types-conversions.md)
+- [Astuces fréquentes Codewars](docs/codewars-tips.md) 
+
+## Astuces
+
+- Chaque fiche contient des exemples annotés pour aller à l’essentiel.
+- Le fichier [Astuces fréquentes Codewars](docs/codewars-tips.md) regroupe des patterns, pièges et raccourcis utiles pour réussir les katas rapidement.
+
+Bonne pratique !
